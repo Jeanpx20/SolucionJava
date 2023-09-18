@@ -2,22 +2,16 @@
 public class Main
 {
 	public static void main(String[] args) {
-		// Declaración de las variables
         int x = 144;
         int y = 999;
-        // Mostrar el valor de cada variable
         System.out.println("El valor de x es: " + x);
         System.out.println("El valor de y es: " + y);
-        // Suma
         int suma = x + y;
         System.out.println("La suma de x e y es: " + suma);
-        // Resta
         int resta = x - y;
         System.out.println("La resta de x e y es: " + resta);
-        // División
         int division = x / y;
         System.out.println("La división de x e y es: " + division);
-        // Multiplicación
         int multiplicacion = x * y;
         System.out.println("La multiplicación de x e y es: " + multiplicacion);
 	}
@@ -26,11 +20,9 @@ public class Main
 public class Main
 {
 	public static void main(String[] args) {
-		// Declaración de las variables
         String nombre = "Juan García";
         String dirección = "Calle Mayor, 123";
         String teléfono = "91 123 45 67";
-        // Mostrar los valores de las variables
         System.out.println("Nombre: " + nombre);
         System.out.println("Dirección: " + dirección);
         System.out.println("Teléfono: " + teléfono);
@@ -43,14 +35,13 @@ public class Main
 	public static void main(String[] args) {
 		// Cantidad en euros a convertir
     double euros = 10.50; 
-    // Factor de conversión de euros a pesetas
     double factorConversion = 166.386; 
     // Realizar la conversión
     double pesetas = euros * factorConversion; 
     System.out.println(euros + " euros equivale a " + pesetas + " pesetas");
 	}
 }
-5.
+4.
 import java.util.Scanner;
 
 public class Main
@@ -65,7 +56,7 @@ public class Main
 	}
 }
 
-6.
+5.
 import java.util.Scanner;
 
 public class Main
@@ -78,6 +69,21 @@ public class Main
         System.out.println("El salario semanal es: " + salario + " euros");
 	}
 }
+6.
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+        double mb;
+        double kb;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce la cantidad de megabytes: ");
+        mb = scanner.nextDouble();
+        kb = mb * 1024;
+        System.out.println("La cantidad de kilobytes es: " + kb);
+	}
+}
+
 7.
 import java.util.Scanner;
 
@@ -279,5 +285,64 @@ public class Main
 
         
 18.
+import java.util.Scanner;
 
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un número entero positivo:");
+        int n = sc.nextInt();
+        System.out.println("Introduce otro número entero positivo:");
+        int m = sc.nextInt();
+        for (int i = 1; i < n; i++) {
+            if (i % m != 0) {
+                System.out.println(i);
+            }
+        }
+	}
+}
+19.
+import java.util.Scanner;
 
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce la altura de la L:");
+        int altura = sc.nextInt();
+        for (int i = 0; i < altura; i++) {
+            System.out.println("*");
+        }
+        for (int i = 0; i < altura / 2 + 1; i++) {
+            System.out.print("*");
+        }
+        System.out.println("*");
+        
+        
+    
+	}
+}
+20.
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce un número entero:");
+        long n = sc.nextLong();
+        long suma = 0;
+        while (n > 0) {
+            long digito = n % 10;
+            if (digito % 2 == 0) {
+                suma += digito;
+            }
+            n /= 10;
+        }
+        System.out.println("La suma de los dígitos pares es: " + suma);
+        
+        
+    
+	}
+}
